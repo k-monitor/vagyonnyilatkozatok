@@ -4,18 +4,64 @@
     <meta charset="UTF-8">
     <title>k-monitor test</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
   </head>
   <body>
     <button>
-        click!
+        új nyilatkozatot kérek!
     </button>
 
+
     <div id="scan">
-        <!-- <embed id="frame" type="application/pdf"> -->
-        <iframe id="frame"></iframe>
+        <p>Gratulálunk, a nyertes pedig:</p>
+        <p id="person"></p>
+        <a id="link" target="_blank">klikk a pdf-hez</a>
     </div><!--
-    --><iframe id="form" src="https://docs.google.com/forms/d/1-iyQ_2chH_QaILjmLu4yh9_dFOHQWHP3x5eySLcptV0/viewform?embedded=true">Loading...</iframe>
+--><div id="form">
+        <form action="https://docs.google.com/forms/d/1-iyQ_2chH_QaILjmLu4yh9_dFOHQWHP3x5eySLcptV0/formResponse?embedded=true" method="POST" id="ss-form" target="hiddenFrame"><ol role="list" class="ss-question-list" style="padding-left: 0">
+            <div class="ss-form-question errorbox-good" role="listitem">
+            <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+            <label class="ss-q-item-label" for="entry_1216803405"><div class="ss-q-title">first question
+            <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+            <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+            <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+            <input type="text" name="entry.1216803405" value="" class="ss-q-short" id="entry_1216803405" dir="auto" aria-label="first question  " aria-required="true" required="" title="">
+            <div class="error-message" id="1437348683_errorMessage"></div>
+            <div class="required-message">This is a required question</div>
+            </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+            <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+            <label class="ss-q-item-label" for="entry_1248160326"><div class="ss-q-title">second question
+            <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+            <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+            <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+            <input type="text" name="entry.1248160326" value="" class="ss-q-short" id="entry_1248160326" dir="auto" aria-label="second question  " aria-required="true" required="" title="">
+            <div class="error-message" id="1809403381_errorMessage"></div>
+            <div class="required-message">This is a required question</div>
+            </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
+            <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
+            <label class="ss-q-item-label" for="entry_752725686"><div class="ss-q-title">third question
+            <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+            <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
+            <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
+            <input type="text" name="entry.752725686" value="" class="ss-q-short" id="entry_752725686" dir="auto" aria-label="third question  " aria-required="true" required="" title="">
+            <div class="error-message" id="428603189_errorMessage"></div>
+            <div class="required-message">This is a required question</div>
+            </div></div></div>
+            <input type="hidden" name="draftResponse" value="[,,&quot;6125386929213415495&quot;]
+            ">
+            <input type="hidden" name="pageHistory" value="0">
+
+            <input type="hidden" name="fvv" value="0">
+
+
+            <input type="hidden" name="fbzx" value="6125386929213415495">
+
+            <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+            <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
+            <div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
+            </tr></tbody></table></div></ol></form>
+    </div>
+    <iframe name="hiddenFrame" style="display: none"></iframe>
+    <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>

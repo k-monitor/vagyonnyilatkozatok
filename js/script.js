@@ -1,18 +1,24 @@
-var url = 'PDFadatlapok.json';
+var url = 'PDFadatlapok.json'; // az adatlapokat tartalmazo json elerhetosege, ugyanott, ahol a .py file
 
 getPDF();
 
 function getPDF() {
-    $.getJSON(url, function(data){
-        $('button').click(function(){
+    $.getJSON(url, function(data) {
+        $('button').click(function() {
             // dir a pdf-et tartalmazo konyvtar neve
+            var randomItem = data[Math.floor(Math.random() * data.length)],
+                randomFile = randomItem.paper,
+                randomName = randomItem.name;
 
-            var dir = 'http://localhost:8000/pdf/',
-                randomFile = data[Math.floor(Math.random()*data.length)],
-                filePath = dir + randomFile;
-
-                $('#frame').attr('src', 'https://docs.google.com/viewer?url=' + filePath + '&embedded=true');
-            // $('.fallback').attr('href', filePath);
-        })
+            $('#scan').addClass('show');
+            $('#person').text(randomName);
+            $('#link').attr('href', randomFile);
+            $('#link').text('lássuk ' + randomName + ' vagyonát!');
+        });
     });
 }
+
+
+$('form').bind('submit', function(e) {
+    alert();
+});
