@@ -1,0 +1,29 @@
+body {
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    display: block;
+}
+
+#scan {
+    display: inline-block;
+    width: 50%;
+    height: 600px;
+    background-color: #ccc;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+
+
+#form {
+    display: inline-block;
+    width: 50%;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
