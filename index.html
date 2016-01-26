@@ -6,61 +6,30 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <button>
-        új nyilatkozatot kérek!
-    </button>
-
-
-    <div id="scan">
-        <p>Gratulálunk, a nyertes pedig:</p>
-        <p id="person"></p>
-        <a id="link" target="_blank">klikk a pdf-hez</a>
-    </div><!--
---><div id="form">
-        <form action="https://docs.google.com/forms/d/1-iyQ_2chH_QaILjmLu4yh9_dFOHQWHP3x5eySLcptV0/formResponse?embedded=true" method="POST" id="ss-form" target="hiddenFrame"><ol role="list" class="ss-question-list" style="padding-left: 0">
-            <div class="ss-form-question errorbox-good" role="listitem">
-            <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_1216803405"><div class="ss-q-title">first question
-            <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-            <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-            <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
-            <input type="text" name="entry.1216803405" value="" class="ss-q-short" id="entry_1216803405" dir="auto" aria-label="first question  " aria-required="true" required="" title="">
-            <div class="error-message" id="1437348683_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-            </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
-            <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_1248160326"><div class="ss-q-title">second question
-            <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-            <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-            <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
-            <input type="text" name="entry.1248160326" value="" class="ss-q-short" id="entry_1248160326" dir="auto" aria-label="second question  " aria-required="true" required="" title="">
-            <div class="error-message" id="1809403381_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-            </div></div></div> <div class="ss-form-question errorbox-good" role="listitem">
-            <div dir="auto" class="ss-item ss-item-required ss-text"><div class="ss-form-entry">
-            <label class="ss-q-item-label" for="entry_752725686"><div class="ss-q-title">third question
-            <label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-            <span class="ss-required-asterisk" aria-hidden="true">*</span></div>
-            <div class="ss-q-help ss-secondary-text" dir="auto"></div></label>
-            <input type="text" name="entry.752725686" value="" class="ss-q-short" id="entry_752725686" dir="auto" aria-label="third question  " aria-required="true" required="" title="">
-            <div class="error-message" id="428603189_errorMessage"></div>
-            <div class="required-message">This is a required question</div>
-            </div></div></div>
-            <input type="hidden" name="draftResponse" value="[,,&quot;6125386929213415495&quot;]
-            ">
-            <input type="hidden" name="pageHistory" value="0">
-
-            <input type="hidden" name="fvv" value="0">
-
-
-            <input type="hidden" name="fbzx" value="6125386929213415495">
-
-            <div class="ss-item ss-navigate"><table id="navigation-table"><tbody><tr><td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-            <input type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ">
-            <div class="ss-password-warning ss-secondary-text">Never submit passwords through Google Forms.</div></td>
-            </tr></tbody></table></div></ol></form>
+    <header>
+        <h1>Vagyonnyilatkozatok hajnala II.</h1>
+        <h2>2016. január 31.</h2>
+        <h2>K-monitor</h2>
+    </header>
+    <div id="main">
+        <section>
+            <p>Köszönjük, hogy eljöttél és segítesz az országgyűlési képviselők vagyonnyilatkozatainak átláthatóbbá tételében.</p>
+            <p>Az éjszaka célja, hogy mind a 199 dokumentumot könnyen kezelhető és kereshető formátumú táblázatba ültessük.</p>
+            <br>
+            <p>Miután kitöltötted a form-ot, kérj új nyilatkozatot!</p>
+        </section>
+        <button>új nyilatkozatot kérek!</button>
+        <div id="scan">
+            <div id="text">
+                <p>Gratulálunk, a nyertes pedig:</p>
+                <p id="person"></p>
+                <a id="link" target="_blank">klikk a pdf-hez</a>
+            </div>
+        </div>
+        <div id="form">
+            <iframe id="poll" src="https://docs.google.com/forms/d/14mRp82cd8kCQi7iC7-Z-Jb63Uq5f1yAQEaWDwIBMC7U/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+        </div>
     </div>
-    <iframe name="hiddenFrame" style="display: none"></iframe>
     <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>

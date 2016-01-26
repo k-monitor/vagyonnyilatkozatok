@@ -13,7 +13,7 @@ function getPDF() {
             $('#scan').addClass('show');
             $('#person').text(randomName);
             $('#link').attr('href', randomFile);
-            $('#link').text('lássuk ' + randomName + ' vagyonát!');
+            $('#link').text('Lássuk ' + randomName + ' vagyonát!');
         });
     });
 }
