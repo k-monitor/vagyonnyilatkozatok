@@ -6,28 +6,30 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <header>
+    <header class="home">
         <h1>Vagyonnyilatkozatok hajnala II.</h1>
         <h2>2016. január 31.</h2>
         <h2>K-monitor</h2>
     </header>
     <div id="main">
-        <section>
+        <section class="home">
             <p>Köszönjük, hogy eljöttél és segítesz az országgyűlési képviselők vagyonnyilatkozatainak átláthatóbbá tételében.</p>
             <p>Az éjszaka célja, hogy mind a 199 dokumentumot könnyen kezelhető és kereshető formátumú táblázatba ültessük.</p>
             <br>
             <p>Miután kitöltötted a form-ot, kérj új nyilatkozatot!</p>
         </section>
         <button>új nyilatkozatot kérek!</button>
-        <div id="scan">
-            <div id="text">
-                <p>Gratulálunk, a nyertes pedig:</p>
-                <p id="person"></p>
-                <a id="link" target="_blank">klikk a pdf-hez</a>
+        <div id="frames">
+            <div id="scan">
+                <div id="text">
+                    <p>Gratulálunk, a nyertes pedig:</p>
+                    <p id="person"></p>
+                </div>
+                <iframe id="link" target="_blank">...</iframe>
             </div>
-        </div>
-        <div id="form">
-            <iframe id="poll" src="https://docs.google.com/forms/d/14mRp82cd8kCQi7iC7-Z-Jb63Uq5f1yAQEaWDwIBMC7U/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            <div id="form">
+                <iframe id="poll" src="https://docs.google.com/forms/d/14mRp82cd8kCQi7iC7-Z-Jb63Uq5f1yAQEaWDwIBMC7U/viewform?embedded=true" height="2000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>

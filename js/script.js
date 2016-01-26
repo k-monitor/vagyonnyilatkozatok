@@ -1,24 +1,34 @@
-var url = 'PDFadatlapok.json'; // az adatlapokat tartalmazo json elerhetosege, ugyanott, ahol a .py file
+var url = 'json/data.json', // az adatlapokat tartalmazo json elerhetosege
+    data;
 
 getPDF();
 
-function getPDF() {
-    $.getJSON(url, function(data) {
-        $('button').click(function() {
-            // dir a pdf-et tartalmazo konyvtar neve
-            var randomItem = data[Math.floor(Math.random() * data.length)],
-                randomFile = randomItem.paper,
-                randomName = randomItem.name;
 
-            $('#scan').addClass('show');
-            $('#person').text(randomName);
-            $('#link').attr('href', randomFile);
-            $('#link').text('Lássuk ' + randomName + ' vagyonát!');
-        });
+function getPDF() {
+    $.getJSON(url, function(d) {
+        data = d;
+        clickForLinks();
     });
 }
 
 
-$('form').bind('submit', function(e) {
-    alert();
-});
+function clickForLinks() {
+    $('button').click(function() {
+        var item = getRandomItem(data)
+            pdf_url = item.pdf_url,
+            name = item.name,
+            google_url = 'https://docs.google.com/viewer?embedded=true&url=' + encodeURIComponent(pdf_url);
+
+        $('body').addClass('small');
+        $('#frames').addClass('show');
+        $('#person').text(name);
+        $('#link').attr('src', google_url);
+    });
+}
+
+
+function getRandomItem(data) {
+    var keys = Object.keys(data);
+    var key = keys[Math.floor(Math.random() * keys.length)];
+    return data[key];
+}
