@@ -1,7 +1,7 @@
 html, body {
     padding: 0;
     margin: 0;
-    font-family: 'Arial';
+    font-family: 'Noto Sans', sans-serif;
 }
 
 h1, h2, p {
@@ -10,11 +10,13 @@ h1, h2, p {
 }
 
 header {
+    position: fixed;
     width: 100%;
     padding: 20px;
-    background-color: #B24FA9;
+    background-color: #155A9B;
     color: #fff;
     box-sizing: border-box;
+    transition: 1s;
 }
 
 #main {
@@ -35,19 +37,18 @@ section {
 
 button {
     display: block;
-    color: #B24FA9;
+    color: #155A9B;
     font-size: 24px;
     background: none;
     margin: 20px;
     padding: 10px;
-    border: 2px solid #B24FA9;
+    border: 2px solid #155A9B;
     border-radius: 8px;
-    transition: button 1s ease-out;
 }
 
 button:hover {
     color: #fff;
-    background-color: #B24FA9;
+    background-color: #155A9B;
 }
 
 
@@ -103,8 +104,32 @@ p {
 }
 
 .small button {
+    position: absolute;
+    top: 5px;
     font-size: 15px;
     padding: 5px;
     margin: 0 0 10px;
+    z-index: 10;
+    color: #fff;
 }
 
+.small button:hover {
+    color: #155A9B;
+    background-color: #fff;
+}
+
+.small text #intro {
+    display: none;
+}
+
+.small text #person {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.small #form {
+    padding: 0;
+}
