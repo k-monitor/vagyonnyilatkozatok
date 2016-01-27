@@ -88,7 +88,6 @@ iframe {
     padding: 0;
 }
 
-
 p {
     color: black;
     font-size: 16px;
@@ -107,7 +106,7 @@ p {
     font-size: 20px;
 }
 
-.small .home {
+.small .hide {
     display: none;
 }
 
