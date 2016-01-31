@@ -13,6 +13,10 @@ a {
     color: #155A9B;
 }
 
+a:hover {
+    color: #2384E0;
+}
+
 header {
     width: 100%;
     padding: 25px 0;
