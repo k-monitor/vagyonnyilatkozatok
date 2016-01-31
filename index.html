@@ -8,25 +8,43 @@
   </head>
   <body>
     <header>
-        <h1 class="hide">Vagyonnyilatkozatok hajnala II.</h1>
-        <h2 class="hide">2016. január 31.</h2>
-        <h2 class="hide">K-Monitor</h2>
+        <div id="title" class="hide">
+            <h1>Vagyonnyilatkozatok hajnala II.</h1>
+            <h2>2016. január 31.</h2>
+            <h2>K-Monitor</h2>
+        </div>
     </header>
     <div id="main">
         <section class="hide">
-            <p>Köszönjük, hogy eljöttél és segítesz az országgyűlési képviselők vagyonnyilatkozatainak átláthatóbbá tételében.</p>
-            <p>Az éjszaka célja, hogy mind a 199 dokumentumot könnyen kezelhető és kereshető formátumú táblázatba ültessük.</p>
-            <br>
-            <p>Miután kitöltötted a form-ot, kérj új nyilatkozatot!</p>
+            <p>Szia!</p>
+            <p>Köszi, hogy érdeklődsz a <strong>K-Monitor Vagyonnyilatkozatok hajnala II.</strong> eseménye iránt.
+A mai éjszaka során az országgyűlési képviselők frissen elérhetővé vált, 2015-re vonatkozó vagyonnyilatkozatait szeretnénk egy kezelhetőbb, átláthatóbb és praktikusabb formátumú adatbázissá gyúrni.</p>
+            <img id="cover" src="i/vny2_cover.jpg">
+            <p>Tölts ki egy nyilatkozatot és segíts te is nekünk!</p>
+            <p>Az <i>új nyilatkozatot kérek!</i> gombra kattintva már el is kezdheted. Osztott képernyő bal oldalára egy képviselő bevallását kapod, jobb oldalára pedig az általunk készített beviteli űrlapot. A te feladatod balról jobbra átvinni az adatokat. <strong>Egy ív kitöltése 5-10 perc</strong>, már ennyivel is nagyon sokat segítesz!</p>
+            <p>Mielőtt belekezdesz, olvasd át az alábbi pár szabályt. Gyakran felmerülő kérdésekre igyekeztünk válaszolni, ezek ismeretében te is gyorsabban haladsz és a későbbi elemzést is megkönnyíted.</p>
+            <ul>
+                <li>Igyekeztünk minél jobban lekövetni a pdf nyilatkozatot. Ha a kitöltés során valami nem fér ki, vagy bármi hibát észlelsz, <strong>írj 99999-et vagy xxxxx-et</strong>, hogy lássuk, mire kell ránézni.</li>
+                <li>Ha egy <strong>mező nincs kitöltve</strong>, hagyd te is bátran üresen, ugorj a következőre.</li>
+                <li>Nevek formátuma: <strong>Vezetéknév Keresztnév(ek)</strong>, Dr.  tehát Czunyiné Dr. Bertalan Judit helyett Czunyiné Bertalan Judit, Dr.</li>
+                <li>Ingatlanoknál 10-15 másodperc, míg a települések betöltenek. Türelem.</li>
+                <li>Számokat minden esetben <strong>írd ki számmal</strong>. 1,2 millió helyett 1200000; 6 ezer helyett 6000.</li>
+                <li>Dátumok esetén sok esetben <strong>elég csak az évszám</strong>.</li>
+                <li>Egyes kérdéseknél a leggyakoribb válaszokon túl megadtunk <strong>other válaszlehetőséget</strong>, ide írd be, ha nem pont a felajánlott kifejezés szerepel a nyilatkozatban.</li>
+                <li>Előfordulhat, hogy a képviselő egy fogalmat más szavakkal ír le, mint az űrlap válaszlehetőségei. <strong>Vásárlás helyett nyugodtan pipáld ki az adás-vételt</strong>, autó helyett a személygépkocsit.</li>
+            </ul>
+            <p>Ha bármi megfejthetetlent vagy az űrlapba nem illőt találtál, azt az egyes kérdéscsoportok végén található megjegyzés mezőbe vidd fel. <strong>Ha a nyilatkozatban tartalmilag bukkansz érdekességre</strong> (pl. három rózsaszín Ferrari Novak Elődnél), uh-oh felkiáltással jelezd a <a href="mailto:vny@k-monitor.hu">vny@k-monitor.hu</a> címre, vagy az esemény <a href="https://www.facebook.com/events/842443989197500/">Facebook oldalára</a>.</p>
+            <p>Nagyon köszi!</p>
+            <img id="logo" src="i/logo.jpg">
         </section>
         <button>új nyilatkozatot kérek!</button>
+        <a id="person"></a>
         <div id="frames">
             <div id="scan">
-                <p id="person"></p>
                 <iframe id="link" target="_blank">...</iframe>
             </div>
             <div id="form">
-                <iframe id="poll" src="https://docs.google.com/forms/d/1bts1Klz0DR9SjIGvQRIWt4_mNWibIJ72t4eeBHVgtDo/viewform?embedded=true" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                <iframe id="poll" src="https://docs.google.com/forms/d/1bts1Klz0DR9SjIGvQRIWt4_mNWibIJ72t4eeBHVgtDo/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
             </div>
         </div>
     </div>
