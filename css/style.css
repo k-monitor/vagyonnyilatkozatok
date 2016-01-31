@@ -9,6 +9,10 @@ h1, h2, p {
     margin: 0;
 }
 
+a {
+    color: #155A9B;
+}
+
 header {
     width: 100%;
     padding: 25px 0;
